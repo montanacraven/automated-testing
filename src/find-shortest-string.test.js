@@ -1,5 +1,5 @@
 const findShortestString = require("./find-shortest-string");
-
+console.log("Montana",findShortestString)
 test("findShortestString finds the shortest string in an array", () => {
   expect(findShortestString(["it", "is", "a", "nice", "day"])).toBe("a");
   expect(findShortestString(["why", "hello", "to", "you"])).toBe("to");
@@ -8,3 +8,4 @@ test("findShortestString finds the shortest string in an array", () => {
 test("findShortestString returns the earlier string in cases of joint shortest strings", () => {
   expect(findShortestString(["brave", "dance"])).toBe("brave");
 }); 
+ 
